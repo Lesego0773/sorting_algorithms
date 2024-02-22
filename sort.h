@@ -31,7 +31,7 @@ void print_list(const listint_t *list);
  * @array: The array to be printed
  * @size: Number of elements in @array
  */
-void print_array(const int *array, size_t size);
+void print_array(int *array, size_t size);
 
 
 
@@ -46,5 +46,8 @@ void selection_sort(int *array, size_t size);
 
 /*Quick sort*/
 void quick_sort(int *array, size_t size);
+
+int lomuto_partition(int *array, int low, int high, int size);
+void swap(int *a, int *b);
 
 #endif
